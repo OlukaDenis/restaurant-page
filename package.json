@@ -1,0 +1,33 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A website restaturant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlukaDenis/restaurant-page.git"
+  },
+  "keywords": [
+    "restaurant"
+  ],
+  "author": "Denis Oluka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OlukaDenis/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/OlukaDenis/restaurant-page#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
