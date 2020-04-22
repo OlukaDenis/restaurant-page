@@ -65,8 +65,13 @@ nav ul li {
   height: 90px;
 }
 
+nav ul li svg {
+  color: white;
+}
+
 nav ul li span {
   line-height: 100px;
+  margin-left: 10px;
 }
 
 nav ul li a{
@@ -86,6 +91,10 @@ nav ul li a:hover {
 
 .active {
   border-bottom: 2px solid #ffd11a;
+}
+
+.active svg {
+  color: #ffd11a;
 }
 
 
@@ -137,6 +146,46 @@ nav ul li a:hover {
   margin-top: 50px;
   font-size: 30px;
 }
+
+.social {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.486);;
+}
+
+.social ul {
+  margin-top: 50px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.social ul a {
+  margin: 5px;
+  color: black;
+}
+
+.social ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.social ul li:nth-child(2n-1) a {
+  margin: 2px;
+}
+
+.emails {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 20px 50px;
+  color: white;
+  text-align: center;
+}
+
+
 
 /*---------------------------------------------------------------------
                   Menu
@@ -195,6 +244,10 @@ nav ul li a:hover {
   color: white;
   font-size: 20px;
   border-bottom: 2px solid #999;
+}
+
+.meal h5 span {
+  margin-left: 10px;
 }
 
 .meal-items {

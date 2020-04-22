@@ -16,7 +16,12 @@ const mealList = (meal) => {
 const menuData = (element) => {
   const content = document.createElement('div');
   content.setAttribute('class', 'meal');
-  content.innerHTML = `<h5> ${element.type} </h5>`;  
+  content.innerHTML = `
+  <h5> 
+    <i class="${element.icon}"></i> 
+    <span> ${element.type} </span> 
+  </h5>
+  `;  
   element.items.forEach( meal => {
     content.appendChild(mealList(meal));
   });
