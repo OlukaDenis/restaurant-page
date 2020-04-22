@@ -3,13 +3,12 @@ import menuList from '../data/menu_list';
 const mealList = (meal) => {
   const menuRow = document.createElement('div');
   menuRow.setAttribute('class', 'meal-items');
-  menuRow.innerHTML
-  = `
+  menuRow.innerHTML = `
     <div> 
       <p> ${meal.name}</p>
     </div>
     <p> $ ${meal.price} </p>
-  `
+  `;
   return menuRow;
 };
 
@@ -21,8 +20,8 @@ const menuData = (element) => {
     <i class="${element.icon}"></i> 
     <span> ${element.type} </span> 
   </h5>
-  `;  
-  element.items.forEach( meal => {
+  `;
+  element.items.forEach((meal) => {
     content.appendChild(mealList(meal));
   });
   return content;
@@ -36,14 +35,14 @@ const menu = () => {
   container.classList.add('menu-container');
   container.innerHTML = `
     <h3> Our Menu </h3>
-  `
+  `;
   const content = document.createElement('div');
   content.setAttribute('class', 'menus card');
 
-  menuList().forEach( element => {  
+  menuList().forEach((element) => {
     content.appendChild(menuData(element));
   });
-  
+
   container.appendChild(content);
   items.appendChild(container);
   return items;
