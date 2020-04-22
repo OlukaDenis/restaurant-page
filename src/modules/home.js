@@ -2,10 +2,6 @@ const home = () => {
   const items = document.createElement('div');
   items.id = 'homepage';
   items.classList.add('homepage');
-
-  items.innerHTML = `
-    <div class="shadow"></div>
-  `
   
   const container = document.createElement('div');
   container.classList.add('home-container');
@@ -16,8 +12,7 @@ const home = () => {
   `
   items.appendChild(container);
 
-
   return items;
-}
+};
 
 export default home;

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
 * {
   box-sizing: border-box;
@@ -19,16 +19,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   color: #eee;
-  font-family: 'Satisfy', cursive;
-  font-size: 25px;
+  font-family: 'Sacramento', cursive;
+  font-size: 40px;
   letter-spacing: 2px;
   font-weight: 800;
-  text-transform: uppercase;
-  margin-left: 30px;
+  margin-left: 50px;
+  font-size: 40px;
+  top: -20px;
+  position: relative;
 }
 
 .content {
   position: relative;
+  background-image: url('images/bg.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 620px;
+  margin-top: -20px;
 }
 
 nav {
@@ -36,11 +43,12 @@ nav {
   background-color: #000000;
   width: 100%; 
   height: 90px;
+  z-index: 10;
+  position: relative;
 }
 
 nav .logo {
   width: 30%;
-  padding-top: 20px;
 }
 
 nav ul {
@@ -48,11 +56,17 @@ nav ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding: 0;
 }
 
 nav ul li {
-  margin-right: 3rem;
+  padding: 0 3rem;
+  text-align: center;
+  height: 90px;
+}
+
+nav ul li span {
+  line-height: 100px;
 }
 
 nav ul li a{
@@ -65,23 +79,22 @@ nav ul li a:hover {
   font-weight: 900;
 }
 
+.active a {
+  color: #ffd11a;
+  font-weight: 900;
+}
+
+.active {
+  border-bottom: 2px solid #ffd11a;
+}
+
+
 /*---------------------------------------------------
           Homepage
 ---------------------------------------------------*/
 .homepage {
-  background-image: url('images/bg.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  height: 610px;
-  margin-top: -40px;
-}
-
-.shadow {
-  /* background-color: rgba(0,0,0,0.897); */
   background-image: linear-gradient(60deg, rgb(0, 0, 0) , rgba(168, 168, 168, 0.082));
   height: inherit;
-  margin-top: 40px;
-  position: relative;
 }
 
 .home-container {
@@ -102,4 +115,91 @@ nav ul li a:hover {
   color: white;
   font-size: 20px;
   font-weight: 600;
+}
+
+/*---------------------------------------------------------------------
+                  Contact
+---------------------------------------------------------------------*/
+.contactpage {
+  background-color: rgba(0, 0, 0, 0.781);
+  height: inherit;
+}
+
+.contact-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.contact-container h3 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+/*---------------------------------------------------------------------
+                  Menu
+---------------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(224, 224, 224); 
+  border-radius: 20px;
+}
+
+.menupage {
+  background-color: rgba(0, 0, 0, 0.781);
+  height: inherit;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menu-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.menu-container h3 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.menus {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 1500px;
+  background: repeating-linear-gradient(-120deg, #2e2d2d52 5px, rgba(110, 110, 110, 0.678) 8px, rgb(51, 51, 51) 5px, #5a59594f 6px);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(126, 126, 126, 0.2);
+  transition: 0.3s;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.meal h5 {
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid #999;
+}
+
+.meal-items {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #eee;
 }
