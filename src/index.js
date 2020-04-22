@@ -2,10 +2,10 @@ import './index.css';
 import home from './modules/home';
 import contact from './modules/contact';
 import menu from './modules/menu';
-import '@fortawesome/fontawesome-free/js/fontawesome';
-import '@fortawesome/fontawesome-free/js/solid';
-import '@fortawesome/fontawesome-free/js/regular';
-import '@fortawesome/fontawesome-free/js/brands';
+import '~@fortawesome/fontawesome-free/js/fontawesome';
+import '~@fortawesome/fontawesome-free/js/solid';
+import '~@fortawesome/fontawesome-free/js/regular';
+import '~@fortawesome/fontawesome-free/js/brands';
 
 const content = document.getElementById('content');
 const homePage = document.getElementById('home');
