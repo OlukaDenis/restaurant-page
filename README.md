@@ -1,3 +1,8 @@
+[![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+[![GitHub version](https://badge.fury.io/gh/OlukaDenis%2Frestaurant-page.svg)](https://badge.fury.io/gh/OlukaDenis%2Frestaurant-page)
+![GitHub](https://img.shields.io/github/license/OlukaDenis/restaurant-page)
+
 # Project: Restaurant Page
 
 This is part of Javascript section in Microverse's Technical curriculum. Find it [here](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
