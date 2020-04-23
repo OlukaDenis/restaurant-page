@@ -23,6 +23,10 @@ h6 {
 }
 
 .logo {
+  position: relative;
+}
+
+.logo a {
   color: #eee;
   font-family: "Sacramento", cursive;
   font-size: 40px;
@@ -30,8 +34,7 @@ h6 {
   font-weight: 800;
   margin-left: 50px;
   font-size: 40px;
-  top: -20px;
-  position: relative;
+  text-decoration: none;
 }
 
 .content {

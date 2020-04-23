@@ -22,18 +22,23 @@ start();
 const homePage = document.getElementById('home');
 const menuPage = document.getElementById('menu');
 const contactPage = document.getElementById('contact');
+const logo = document.getElementById('logo');
 
 const clickHome = () => {
-  homePage.classList.add('active');
-};
-clickHome();
-
-homePage.addEventListener('click', () => {
   container.innerHTML = '';
   container.appendChild(home());
   homePage.classList.add('active');
   menuPage.classList.remove('active');
   contactPage.classList.remove('active');
+};
+clickHome();
+
+homePage.addEventListener('click', () => {
+  clickHome();
+});
+
+logo.addEventListener('click', () => {
+  clickHome();
 });
 
 menuPage.addEventListener('click', () => {
