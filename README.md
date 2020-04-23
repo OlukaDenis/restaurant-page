@@ -1,9 +1,14 @@
+[![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+[![GitHub version](https://badge.fury.io/gh/OlukaDenis%2Frestaurant-page.svg)](https://badge.fury.io/gh/OlukaDenis%2Frestaurant-page)
+![GitHub](https://img.shields.io/github/license/OlukaDenis/restaurant-page)
+
 # Project: Restaurant Page
 
 This is part of Javascript section in Microverse's Technical curriculum. Find it [here](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
 The goal of the project is to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
 
-
+![dennys](https://user-images.githubusercontent.com/37341054/80044273-a3a7b400-850c-11ea-8afb-c8f33ac29c27.png)
 
 ## Built With
 - Javascript(ES6)
