@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack --watch --mode development --open"
+    "start": "webpack --watch --mode development",
+    "server": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,8 @@
     "style-loader": "^1.1.4",
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
