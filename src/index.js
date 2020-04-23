@@ -22,8 +22,6 @@ start();
 const homePage = document.getElementById('home');
 const menuPage = document.getElementById('menu');
 const contactPage = document.getElementById('contact');
-const homeContainer = document.getElementById('homepage');
-const menuContainer = document.getElementById('menupage');
 
 const clickHome = () => {
   homePage.classList.add('active');

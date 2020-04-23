@@ -9,19 +9,19 @@ const navBar = () => {
   <li id="home" class="nav-item">
     <i class="fas fa-home"></i>
     <span>
-      <a href="#">Home</a>
+      <a href="#home">Home</a>
     </span>
   </li>
   <li id="menu" class="nav-item">
     <i class="fas fa-utensils"></i>
     <span>
-      <a href="#">Menu</a>
+      <a href="#menu">Menu</a>
     </span>
   </li>
   <li id="contact" class="nav-item">
     <i class="fas fa-headset"></i>
     <span>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </span>
   </li>
   `;
