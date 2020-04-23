@@ -45,15 +45,11 @@ Install the dependencies and modules
 $ npm install
 ```
 
-Run the app in development mode
-```sh
-$ npm run start
-```
-
-
 ### Usage
-You can run the project using Liveserver extension in available in Vscode
-
+```sh
+$ npm run server
+```
+This will open the app at port 9000. If it doesn't open, visit ```http://localhost:9000```
 
 ## Author
 
