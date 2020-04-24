@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo a {
+  color: #eee;
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-left: 50px;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.content {
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  background-color: #000000;
+  width: 100%;
+  height: 90px;
+  z-index: 10;
+  position: relative;
+}
+
+nav .logo {
+  width: 30%;
+}
+
+nav ul {
+  width: 70%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0 3rem;
+  text-align: center;
+  height: 90px;
+}
+
+nav ul li svg {
+  color: white;
+}
+
+nav ul li span {
+  line-height: 100px;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  font-weight: 900;
+}
+
+.active a {
+  color: #ffd11a;
+  font-weight: 900;
+}
+
+.active {
+  border-bottom: 2px solid #ffd11a;
+}
+
+.active svg {
+  color: #ffd11a;
+}
+
+/*-----------------------------------------------------------
+            scrollbar
+------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(75, 74, 74, 0.705);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(224, 224, 224);
+  border-radius: 20px;
+}
+
+#container {
+  height: 100%;
+}
+
+/*---------------------------------------------------
+          Homepage
+---------------------------------------------------*/
+.homepage {
+  background-image: linear-gradient(
+    60deg,
+    rgb(0, 0, 0),
+    rgba(168, 168, 168, 0.082)
+  );
+  height: inherit;
+}
+
+.home-container {
+  width: 600px;
+  position: relative;
+  top: 200px;
+  left: 100px;
+  position: absolute;
+}
+
+.home-container h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.home-container p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*---------------------------------------------------------------------
+                  Contact
+---------------------------------------------------------------------*/
+.contactpage {
+  background-color: rgba(0, 0, 0, 0.781);
+  height: inherit;
+}
+
+.contact-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.contact-container h3 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.social {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.social ul {
+  margin-top: 50px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.social ul a {
+  margin: 5px;
+  color: black;
+}
+
+.social ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.social ul li:nth-child(2n-1) a {
+  margin: 2px;
+}
+
+.emails {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 20px 50px;
+  color: white;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------
+                  Menu
+---------------------------------------------------------------------*/
+
+.menupage {
+  background-color: rgba(0, 0, 0, 0.781);
+  height: inherit;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menu-container {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.menu-container h3 {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.menus {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 1500px;
+  background: repeating-linear-gradient(
+    -120deg,
+    #2e2d2d52 5px,
+    rgba(110, 110, 110, 0.678) 8px,
+    rgb(51, 51, 51) 5px,
+    #5a59594f 6px
+  );
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(126, 126, 126, 0.2);
+  transition: 0.3s;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.meal h5 {
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid #999;
+}
+
+.meal h5 span {
+  margin-left: 10px;
+}
+
+.meal-items {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #eee;
+}
