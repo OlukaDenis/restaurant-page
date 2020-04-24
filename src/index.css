@@ -22,10 +22,6 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-.logo {
-  position: relative;
-}
-
 .logo a {
   color: #eee;
   font-family: "Sacramento", cursive;
@@ -50,9 +46,8 @@ nav {
   display: flex;
   background-color: #000000;
   width: 100%;
-  height: 90px;
+  max-height: 90px;
   z-index: 10;
-  position: relative;
 }
 
 nav .logo {
@@ -105,6 +100,45 @@ nav ul li a:hover {
   color: #ffd11a;
 }
 
+@media only screen and (max-width: 600px) {
+
+  .content {
+    background-size: 600px 100vh;
+  }
+  nav .logo {
+    display: none;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    width: 100%;
+    height: 90px;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+
+ nav ul li svg {
+    margin-top: 30px;
+  }
+
+  nav ul li span {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    background-size: 820px 100vh;
+  }
+
+  nav ul li {
+    padding: 0 2rem;
+  }  
+}
 /*-----------------------------------------------------------
             scrollbar
 ------------------------------------------------------------*/
@@ -139,8 +173,6 @@ nav ul li a:hover {
 }
 
 .home-container {
-  width: 600px;
-  position: relative;
   top: 200px;
   left: 100px;
   position: absolute;
@@ -158,16 +190,24 @@ nav ul li a:hover {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 600px) {
+  .home-container {
+    left: 50px;
+  }
+}
+
 /*---------------------------------------------------------------------
                   Contact
 ---------------------------------------------------------------------*/
 .contactpage {
   background-color: rgba(0, 0, 0, 0.781);
   height: inherit;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .contact-container {
-  position: absolute;
+  position: relative;
   display: block;
   width: 100%;
 }
@@ -180,7 +220,7 @@ nav ul li a:hover {
 }
 
 .social {
-  max-width: 900px;
+  max-width: 70%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.486);
 }
@@ -217,6 +257,21 @@ nav ul li a:hover {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .social {
+    max-width: 90%;
+  }
+
+  .emails {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px)  {
+  .social {
+    max-width: 80%;
+  }
+}
 /*---------------------------------------------------------------------
                   Menu
 ---------------------------------------------------------------------*/
@@ -242,7 +297,7 @@ nav ul li a:hover {
 }
 
 .menus {
-  max-width: 900px;
+  max-width: 70%;
   margin: 0 auto;
   height: 1500px;
   background: repeating-linear-gradient(
@@ -277,4 +332,20 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   color: #eee;
+}
+
+@media only screen and (max-width: 600px) {
+  .menus {
+    max-width: 90%;
+  }
+
+  .meal-items {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px)  { 
+  .menus {
+    max-width: 80%;
+  }
 }
