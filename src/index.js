@@ -3,10 +3,12 @@ import home from './modules/home';
 import contact from './modules/contact';
 import menu from './modules/menu';
 import navBar from './modules/navbar';
+/* eslint-disable */
 import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
+/* eslint-enable */
 
 const content = document.getElementById('content');
 const container = document.createElement('div');
