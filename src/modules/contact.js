@@ -1,17 +1,3 @@
-const social = () => {
-  const content = document.createElement('div');
-  content.setAttribute('class', 'social card');
-  content.innerHTML = `
-    <ul>
-      <li><a href="#"> <i class="fab fa-twitter"></i> </a> </li>
-      <li> <a href="#"><i class="fab fa-facebook-f"></i> </a> </li>
-      <li> <a href="#"> <i class="fab fa-instagram"></i> </a></li>
-    </ul>
-  `;
-  content.appendChild(emailContacts());
-  return content;
-};
-
 const emailContacts = () => {
   const emails = document.createElement('div');
   emails.setAttribute('class', 'emails');
@@ -32,6 +18,20 @@ const emailContacts = () => {
   return emails;
 };
 
+const social = () => {
+  const content = document.createElement('div');
+  content.setAttribute('class', 'social card');
+  content.innerHTML = `
+    <ul>
+      <li><a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+      <li> <a href="#"><i class="fab fa-facebook-f"></i> </a> </li>
+      <li> <a href="#"> <i class="fab fa-instagram"></i> </a></li>
+    </ul>
+  `;
+  content.appendChild(emailContacts());
+  return content;
+};
+
 const contact = () => {
   const items = document.createElement('div');
 
@@ -44,7 +44,8 @@ const contact = () => {
   container.innerHTML = `
     <h3> Get In Touch </h3>
   `;
-  container.appendChild(social());  
+
+  container.appendChild(social());
   items.appendChild(container);
   return items;
 };
