@@ -1,4 +1,5 @@
 import menuList from '../data/menu_list';
+const mealFetch = fetch('./data/menu.json');
 
 const mealList = (meal) => {
   const menuRow = document.createElement('div');
@@ -39,9 +40,13 @@ const menu = () => {
   const content = document.createElement('div');
   content.setAttribute('class', 'menus card');
 
-  menuList().forEach((element) => {
-    content.appendChild(menuData(element));
-  });
+  mealFetch.then(response => response.json())
+    .then(mealData => mealData.data)
+    .then(meals => {
+      meals.forEach((meal) => {
+        content.appendChild(menuData(meal));
+      });
+    });
 
   container.appendChild(content);
   items.appendChild(container);
