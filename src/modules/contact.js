@@ -10,6 +10,13 @@ const contact = () => {
   container.innerHTML = `
     <h3> Get In Touch </h3>
   `;
+  
+  container.appendChild(social());  
+  items.appendChild(container);
+  return items;
+};
+
+const social = () => {
   const content = document.createElement('div');
   content.setAttribute('class', 'social card');
   content.innerHTML = `
@@ -19,6 +26,11 @@ const contact = () => {
       <li> <a href="#"> <i class="fab fa-instagram"></i> </a></li>
     </ul>
   `;
+  content.appendChild(emailContacts());
+  return content;
+};
+
+const emailContacts = () => {
   const emails = document.createElement('div');
   emails.setAttribute('class', 'emails');
   emails.innerHTML = `
@@ -35,10 +47,7 @@ const contact = () => {
       <p> bookings@dennys.com </p>
     </div>
   `;
-  container.appendChild(content);
-  content.appendChild(emails);
-  items.appendChild(container);
-  return items;
+  return emails;
 };
 
 export default contact;

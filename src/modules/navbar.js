@@ -6,6 +6,12 @@ const navBar = () => {
   logo.innerHTML = `
     <a id="logo" href="#home"> Denny's </a>
   `;
+  nav.appendChild(logo);
+  nav.appendChild(navItems());
+  return nav;
+};
+
+const navItems = () => {
   const list = document.createElement('ul');
   list.innerHTML = `
   <li id="home" class="nav-item">
@@ -27,9 +33,7 @@ const navBar = () => {
     </span>
   </li>
   `;
-  nav.appendChild(logo);
-  nav.appendChild(list);
-  return nav;
+  return list;
 };
 
 export default navBar;
