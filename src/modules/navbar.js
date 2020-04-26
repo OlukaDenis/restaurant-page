@@ -1,11 +1,4 @@
-const navBar = () => {
-  const nav = document.createElement('nav');
-  nav.setAttribute('class', 'nav');
-  const logo = document.createElement('p');
-  logo.setAttribute('class', 'logo');
-  logo.innerHTML = `
-    <a id="logo" href="#home"> Denny's </a>
-  `;
+const navItems = () => {
   const list = document.createElement('ul');
   list.innerHTML = `
   <li id="home" class="nav-item">
@@ -27,8 +20,19 @@ const navBar = () => {
     </span>
   </li>
   `;
+  return list;
+};
+
+const navBar = () => {
+  const nav = document.createElement('nav');
+  nav.setAttribute('class', 'nav');
+  const logo = document.createElement('p');
+  logo.setAttribute('class', 'logo');
+  logo.innerHTML = `
+    <a id="logo" href="#home"> Denny's </a>
+  `;
   nav.appendChild(logo);
-  nav.appendChild(list);
+  nav.appendChild(navItems());
   return nav;
 };
 

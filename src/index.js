@@ -35,6 +35,22 @@ const clickHome = () => {
 };
 clickHome();
 
+const clickMenu = () => {
+  container.innerHTML = '';
+  container.appendChild(menu());
+  menuPage.classList.add('active');
+  homePage.classList.remove('active');
+  contactPage.classList.remove('active');
+};
+
+const clickContact = () => {
+  container.innerHTML = '';
+  container.appendChild(contact());
+  homePage.classList.remove('active');
+  menuPage.classList.remove('active');
+  contactPage.classList.add('active');
+};
+
 homePage.addEventListener('click', () => {
   clickHome();
 });
@@ -44,17 +60,9 @@ logo.addEventListener('click', () => {
 });
 
 menuPage.addEventListener('click', () => {
-  container.innerHTML = '';
-  container.appendChild(menu());
-  menuPage.classList.add('active');
-  homePage.classList.remove('active');
-  contactPage.classList.remove('active');
+  clickMenu();
 });
 
 contactPage.addEventListener('click', () => {
-  container.innerHTML = '';
-  container.appendChild(contact());
-  homePage.classList.remove('active');
-  menuPage.classList.remove('active');
-  contactPage.classList.add('active');
+  clickContact();
 });

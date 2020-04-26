@@ -1,4 +1,3 @@
-import menuList from '../data/menu_list';
 const mealFetch = fetch('./data/menu.json');
 
 const mealList = (meal) => {

@@ -1,24 +1,4 @@
-const contact = () => {
-  const items = document.createElement('div');
-
-  items.id = 'contactpage';
-  items.classList.add('contactpage');
-
-  const container = document.createElement('div');
-  container.classList.add('contact-container');
-
-  container.innerHTML = `
-    <h3> Get In Touch </h3>
-  `;
-  const content = document.createElement('div');
-  content.setAttribute('class', 'social card');
-  content.innerHTML = `
-    <ul>
-      <li><a href="#"> <i class="fab fa-twitter"></i> </a> </li>
-      <li> <a href="#"><i class="fab fa-facebook-f"></i> </a> </li>
-      <li> <a href="#"> <i class="fab fa-instagram"></i> </a></li>
-    </ul>
-  `;
+const emailContacts = () => {
   const emails = document.createElement('div');
   emails.setAttribute('class', 'emails');
   emails.innerHTML = `
@@ -35,8 +15,37 @@ const contact = () => {
       <p> bookings@dennys.com </p>
     </div>
   `;
-  container.appendChild(content);
-  content.appendChild(emails);
+  return emails;
+};
+
+const social = () => {
+  const content = document.createElement('div');
+  content.setAttribute('class', 'social card');
+  content.innerHTML = `
+    <ul>
+      <li><a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+      <li> <a href="#"><i class="fab fa-facebook-f"></i> </a> </li>
+      <li> <a href="#"> <i class="fab fa-instagram"></i> </a></li>
+    </ul>
+  `;
+  content.appendChild(emailContacts());
+  return content;
+};
+
+const contact = () => {
+  const items = document.createElement('div');
+
+  items.id = 'contactpage';
+  items.classList.add('contactpage');
+
+  const container = document.createElement('div');
+  container.classList.add('contact-container');
+
+  container.innerHTML = `
+    <h3> Get In Touch </h3>
+  `;
+
+  container.appendChild(social());
   items.appendChild(container);
   return items;
 };
