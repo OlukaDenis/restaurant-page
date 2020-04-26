@@ -1,21 +1,3 @@
-const contact = () => {
-  const items = document.createElement('div');
-
-  items.id = 'contactpage';
-  items.classList.add('contactpage');
-
-  const container = document.createElement('div');
-  container.classList.add('contact-container');
-
-  container.innerHTML = `
-    <h3> Get In Touch </h3>
-  `;
-  
-  container.appendChild(social());  
-  items.appendChild(container);
-  return items;
-};
-
 const social = () => {
   const content = document.createElement('div');
   content.setAttribute('class', 'social card');
@@ -48,6 +30,23 @@ const emailContacts = () => {
     </div>
   `;
   return emails;
+};
+
+const contact = () => {
+  const items = document.createElement('div');
+
+  items.id = 'contactpage';
+  items.classList.add('contactpage');
+
+  const container = document.createElement('div');
+  container.classList.add('contact-container');
+
+  container.innerHTML = `
+    <h3> Get In Touch </h3>
+  `;
+  container.appendChild(social());  
+  items.appendChild(container);
+  return items;
 };
 
 export default contact;
